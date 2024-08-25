@@ -1,6 +1,7 @@
 <script>
   import { getContext } from 'svelte';
-  import { Line } from 'svelte-chartjs';
+  import { Bar } from 'svelte-chartjs';
+
   /* import { Bar } from 'svelte-chartjs'; */
   import 'chart.js/auto';
 
@@ -21,5 +22,5 @@
 </script>
 
 <div use:styleable={$component.styles}>
-  <Line data={ typeof data === 'string' ? JSON.parse(data) : data } options={Object.assign(default_options, typeof options === 'string' ? JSON.parse(options) : options)} />
+  <Bar data={ typeof data === 'string' ? JSON.parse(data) : data } options={Object.assign(default_options, typeof options === 'string' ? JSON.parse(options) : options)} />
 </div>
