@@ -13,6 +13,7 @@ import pkg from "./package.json"
 import crypto from "crypto"
 import { validate } from "@budibase/backend-core/plugins"
 
+
 const ignoredWarnings = [
   "unused-export-let",
   "css-unused-selector",
